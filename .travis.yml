@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - "node"
+- node
 before_script: npm install
 script: npm run lint
 deploy:
   provider: npm
-  email: "jamesarthurjensen@gmail.com"
-  api_key: "YOUR_AUTH_TOKEN"
+  email: jamesarthurjensen@gmail.com
+  api_key:
+    secure: aPkqz/TcB2uTMreIP2Rmo25vsDy9k07e+E7wVZMhMvyGDrPpd3KZXv7SoFoA8cajMsQUrffFocvYg0MRnvSA0K/85yH6OkHktk4qKVer3ZuSR+4xfG0nkTcjxopaSm7A3wA9SXOlHOXMpFq66M9UKzIyPwM0tbpyhfd3AnAFnOxxQ/7SJ2VJYvGXE9Unj/UJNF1HI2d2ym4cZnodxWdH4nTJi0gabQv28053gIgvn7L1eYlWCbtecuyIxYz0Ha2NUOUg2Q0U1woObcS7sY4EOpsiklZeQvZgHGRVcuVitPQ5pia/XzBXekQzBvmuBD6BV4hgsO/XWOZwNaTIIVPpPWyhhxYiW9g7MLRlokv8zY4E0zQunNiB9HvxlNM1K+gDctfczkugohsYWeg/LISAmy8zzc1TE7AkEh0eP83LvNjdQVidWLrmfcBYZJycDKS5Sk2DZqClBk7gaVT0qeYT4v7IFteg6ousKin6qwkcSHZWww8TIUfB5Q83obinCiT1liEN/H9o9LtFq5ySOGjowOqqT0hBFa2tfIHRF22KwRpE+J0VY+VuB7jWs1kOrUs51hGnwl18pS/fY0f5VTWUidWLCoH6jE9Ce0kfBmFuKvXO96UznuvBYtzg6ZE3sbnDABBHbv3T8IMjjhDm//zFJI2WVmHyWJyKzDsLtLBzl7w=

@@ -1,4 +1,4 @@
-# js-2-json
+# js-2-json [![Build Status](https://travis-ci.com/jajaperson/js-2-json.svg?branch=master)](https://travis-ci.com/jajaperson/js-2-json)
 Easily use JavaScript for configuration files to be converted to JSON.
 
 ## Usage
