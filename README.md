@@ -1,4 +1,4 @@
-# js2json [![NPM Version](https://img.shields.io/npm/v/@jajaperson/js2json.svg?style=for-the-badge)](https://www.npmjs.com/package/@jajaperson/js2json) [![Build Status](https://img.shields.io/travis/com/jajaperson/js2json.svg?style=for-the-badge)](https://www.npmjs.com/package/@jajaperson/js2json)
+# js2json [![NPM Version](https://img.shields.io/npm/v/@jajaperson/js2json.svg)](https://www.npmjs.com/package/@jajaperson/js2json) [![Build Status](https://travis-ci.com/jajaperson/js2json)](https://www.npmjs.com/package/@jajaperson/js2json)
 Easily use JavaScript for configuration files to be converted to JSON.
 
 ## Usage
@@ -6,7 +6,7 @@ First, install the package
 
 **Globally**
 ```sh
-npm install @jajaperson/js2json
+npm install -g @jajaperson/js2json
 ```
 **Locally**
 (recommended if you are using `js2json` in your build step)
