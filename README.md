@@ -6,12 +6,12 @@ First, install the package
 
 **Globally**
 ```sh
-npm install js2json
+npm install @jajaperson/js2json
 ```
 **Locally**
 (recommended if you are using `js2json` in your build step)
 ```sh
-npm install --save-dev js2json
+npm install --save-dev @jajaperson/js2json
 ```
 
 Then, run the command like so
