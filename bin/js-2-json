@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+const {writeFileSync} = require('fs');
+const {resolve} = require('path');
+const yargs = require('yargs')
+    .usage('$0 --input <input file> [args]')
+    .option('i', {
+      alias: 'input',
+      demandOption: true,
+      describe: 'js file to convert',
+      type: 'string',
+    })
+    .option('o', {
+      alias: 'output',
+      describe: 'json file to output',
+      type: 'string',
+    })
+    .default('o', undefined, '<input>.json')
+    .option('p', {
+      alias: 'pretty',
+      describe: 'format the json output',
+      type: 'boolean',
+    })
+    .option('sp', {
+      alias: 'spaces',
+      describe: 'number of spaces to use for indentation',
+      default: 2,
+      type: 'number',
+    })
+    .help()
+    .alias('help', 'h')
+    .alias('version', 'v')
+    .argv;
+
+let object = require(resolve(yargs.i));
+// Matches `.js` file extension and anything that follows.
+let outputPath = resolve(yargs.o || yargs.i.replace(/\.js(?!\w)(.|$)/, ''));
+if (outputPath.search(/\.json$/) === -1) {
+  outputPath += '.json';
+}
+
+
+console.log(`Writing to ${outputPath}`);
+
+writeFileSync(
+  outputPath,
+  JSON.stringify(object, null, yargs.p ? yargs.sp : null)
+);
