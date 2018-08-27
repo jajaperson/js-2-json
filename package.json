@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jajaperson/js-2-json.git"
+    "url": "git+https://github.com/jajaperson/js2json.git"
   },
   "keywords": [
     "JSON"
@@ -18,9 +18,12 @@
   "author": "James Jensen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jajaperson/js-2-json/issues"
+    "url": "https://github.com/jajaperson/js2json/issues"
   },
-  "homepage": "https://github.com/jajaperson/js-2-json#readme",
+  "homepage": "https://github.com/jajaperson/js2json#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "yargs": "^12.0.1"
   },
