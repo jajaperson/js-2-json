@@ -1,4 +1,4 @@
-# js2json ![[NPM Version](https://img.shields.io/npm/v/@jajaperson/js2json.svg?style=for-the-badge)](https://www.npmjs.com/package/@jajaperson/js2json) [![Build Status](https://img.shields.io/travis/com/jajaperson/js2json.svg?style=for-the-badge)](https://www.npmjs.com/package/@jajaperson/js2json)
+# js2json [![NPM Version](https://img.shields.io/npm/v/@jajaperson/js2json.svg?style=for-the-badge)](https://www.npmjs.com/package/@jajaperson/js2json) [![Build Status](https://img.shields.io/travis/com/jajaperson/js2json.svg?style=for-the-badge)](https://www.npmjs.com/package/@jajaperson/js2json)
 Easily use JavaScript for configuration files to be converted to JSON.
 
 ## Usage
