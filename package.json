@@ -1,12 +1,12 @@
 {
-  "name": "js-2-json",
+  "name": "@jajaperson/js2json",
   "version": "1.0.0",
   "description": "Easily use JavaScript for configuration files to be converted to JSON.",
-  "main": "bin/js-2-json",
-  "bin": "bin/js-2-json",
+  "main": "bin/js2json",
+  "bin": "bin/js2json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint bin/js-2-json"
+    "lint": "eslint bin/js2json"
   },
   "repository": {
     "type": "git",
