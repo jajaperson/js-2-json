@@ -39,7 +39,7 @@ if (yargs.o) {
   outputPath = yargs.o;
 } else {
   // Matches `.js` file extension and anything that follows.
-  outputPath = yargs.i.replace(/\.js(?!\w)(.|$)/, '');
+  outputPath = yargs.i.replace(/\.js(?!\w)(.*|$)/, '');
   if (outputPath.search(/\.json$/) === -1) {
     outputPath += '.json';
   }
