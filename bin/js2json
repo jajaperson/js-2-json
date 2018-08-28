@@ -33,12 +33,19 @@ const yargs = require('yargs')
     .argv;
 
 let object = require(resolve(yargs.i));
-// Matches `.js` file extension and anything that follows.
-let outputPath = resolve(yargs.o || yargs.i.replace(/\.js(?!\w)(.|$)/, ''));
-if (outputPath.search(/\.json$/) === -1) {
-  outputPath += '.json';
+
+let outputPath;
+if (yargs.o) {
+  outputPath = yargs.o;
+} else {
+  // Matches `.js` file extension and anything that follows.
+  outputPath = yargs.i.replace(/\.js(?!\w)(.|$)/, '');
+  if (outputPath.search(/\.json$/) === -1) {
+    outputPath += '.json';
+  }
 }
 
+outputPath = resolve(outputPath);
 
 console.log(`Writing to ${outputPath}`);
 
