@@ -42,5 +42,5 @@ Options:
 
 ## Use Cases
 If you want to include dynamic values in a JSON configuration file, you can use
-a javascript file that `module.exports` the object and`js2json` to your build
+a javascript file that `module.exports` the object and add `js2json` to your build
 step.
