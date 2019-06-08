@@ -5,8 +5,9 @@
   "main": "bin/js2json",
   "bin": "bin/js2json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint bin/js2json"
+    "test": "echo \"Error: no test specified\"",
+    "lint": "eslint bin/js2json",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "np": "^5.0.3"
   }
 }
